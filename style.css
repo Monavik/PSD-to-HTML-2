@@ -1,0 +1,453 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #f9fafe;
+    width: 2000px;
+}
+
+/* HERO */
+
+.hero {
+    height: 850px;
+    background-image: url(hero-img.png);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.nav-container {
+    margin: 0 252px;
+    padding-top: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 50px;
+    font-weight: 700;
+}
+
+.active {
+    border: 1px solid;
+    padding: 15px 39px;
+    border-radius: 5px;
+}
+
+.hero-headline {
+    text-align: center;
+}
+
+.hero-headline h2 {
+    font-size: 72px;
+    letter-spacing: 4.54px;
+    margin: 226px 0 29px;
+}
+
+.hero-headline p {
+    letter-spacing: 1.2px;
+    font-size: 30px;
+    margin-bottom: 90px;
+}
+
+.search-bar {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.56px;
+    border-radius: 5px;
+    width: 769px;
+    height: 60px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 230px;
+} 
+
+.search {
+    color: #717171;
+    background-color: #fff;
+    width: 569px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.find {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-radius: 0 5px 5px 0;
+}
+.btn {
+    background-color: #e7434e;
+    color: #fff;
+}
+.search p {
+    margin-left: 20px;
+}
+.find img {
+    margin-right: 11px;
+}
+
+/* DESTINATIONS */
+
+
+.table {
+    margin: 0; 
+    padding: 0;
+    text-align: center;
+    width: 2000px;
+}
+
+.container {
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-around;
+    height: 140px;
+    margin-top: -70px;
+    margin-bottom: 110px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(52, 52, 52, 0.15);
+}
+
+.box {
+    margin: auto;
+}
+.line img {
+    width: 1px;
+    height: 80px;
+    background-color: #717171;
+    opacity: 0.3;
+}
+
+.box h5 {
+    color: #343434;
+    font-family: 'Open-sans';
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 17px;
+}
+
+.box p {
+    color: #717171;
+    font-family: 'Open-sans';
+    text-transform: capitalize;
+    font-size: 18px; 
+    font-weight: 400;
+    margin: 0;
+}
+
+/* DESTINATIONS */
+
+.quantity1 {
+    height: 42px;
+    width: 82px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-left: 27px;
+    padding: 0;
+}
+.quantity2 {
+    height: 42px;
+    width: 105px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-left: 27px;
+    padding: 0;
+}
+.upper-dest {}
+
+.quantity-name1 {
+    width: 226px;
+    margin-top: 206px;
+    margin-left: 27px;
+    
+}
+.quantity-name2 {
+    height: 56px;
+    width: 67px;
+    margin-left: 27px;
+    margin-top: 206px;
+}
+.quantity-name3 {
+    margin-top: 206px;
+    margin-left: 27px;
+    width: 276px;
+}
+
+.quantity-name4 {
+    margin-top: 206px;
+    margin-left: 27px;
+    width: 131px;
+}
+.quantity-name5 {
+    margin-top: 206px;
+    margin-left: 27px;
+    width: 202px;
+}
+
+.destinations {
+    margin: 0 auto;
+}
+
+.ibiza {
+    background-image: url(ibiza.png);
+    background-repeat: no-repeat;
+    margin-top: 83px;
+    margin-bottom: 30px;
+    width: 369px;
+    height: 360px;
+}
+
+.upper-dest,
+.lower-dest {
+    display: flex;
+    justify-content: space-around;
+}
+.destinations-headline h4,
+.featured-headline h4 {
+    color: #343434;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 30px;
+}
+.destinations-headline p,
+.featured-headline p {
+    color: #717171;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    margin: 0;
+}
+.figueira {
+    margin-top: 83px;
+    margin-bottom: 30px;
+    background-image: url(figueira.png);
+    background-repeat: no-repeat;
+    width: 772px;
+    height: 360px;
+}
+
+.palma {
+    margin-top: 0;
+    margin-bottom: 93px;
+    background-image: url(palma.png);
+    background-repeat: no-repeat;
+    width: 369px;
+    height: 360px;
+}
+.portofino {
+    background-image: url(portofino.png);
+    background-repeat: no-repeat;
+    width: 369px;
+    height: 360px;
+}
+.hercules {
+    background-image: url(hercules.png);
+    background-repeat: no-repeat;
+    width: 369px;
+    height: 360px;
+}
+.btn-wide {
+    width: 310px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid rgba(38, 38, 38, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #343434;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.56px;
+}
+.dest-images {
+    margin-bottom: 0;
+}
+
+
+
+/*OWN BOAT*/
+
+.have-your {
+    background-image: url(own-boat.png);
+    height: 600px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 101px;
+}
+
+.own-boat h2 {
+    font-family: Raleway;
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 4.54px;
+    padding-top: 188px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.own-boat p {
+    font-family: "Raleway";
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    margin-top: 0;
+    margin-bottom: 86px;
+}
+
+.btn-make {
+    background-color: #e7434e;
+    color: #fff;
+    width: 320px;
+}
+
+/*FEATURED BOATS*/
+
+.featured-boats {
+    text-align: center;
+}
+
+.featured-headline {
+    text-align: center;   
+}
+.boats1, 
+.boats2 {
+    display: flex;
+    justify-content: space-around;
+}
+.boats1 {
+    margin-top: 93px;
+    margin-bottom: 30px;
+}
+
+.boats2 {
+    margin-bottom: 100px;
+}
+.delphia {
+    background-image: url(Delphia.png);
+    height: 340px;
+    width: 574px;
+}
+.sense {
+    background-image: url(sense.png);
+    height: 340px;
+    width: 574px;
+}
+.crusier5 {
+    background-image: url(Crusier51.png);
+    height: 340px;
+    width: 574px;
+}
+.crusier4 {
+    background-image: url(cruiser41s.png);
+    height: 340px;
+    width: 574px;
+}
+.boats1-2 btn {
+    width: 105px;
+}
+.btn-load {
+    margin-bottom: 87px;
+    width: 235px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #404040;
+}
+.container-footer {
+    height: 323px;
+    background-color: #404040;
+    display: flex;
+    justify-content: space-around;
+}
+.column1,
+.column2,
+.column3 h5,
+.column4 {
+    margin-top: 56px;
+}
+
+.column3 h5 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.56px;
+    text-align: left;
+}
+.email-bar {
+    width: 417px;
+    background-color: #fff;    
+    height: 42px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.email-bar > p {
+    color: #717171;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.28px;
+    margin-left: 22px;
+}
+.subscribe {
+    width: 147px;
+    height: 42px;
+    border-radius: 0 5px 5px 0;
+    background-color: #e7434e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.social-media ul {
+    text-align: right;
+    margin: 0 
+}
+.dupa {
+    height: 120px;
+    margin-left: 50px;
+    width: 150px;
+}
