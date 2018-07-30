@@ -1,44 +1,382 @@
-/*
-Error: Inconsistent indentation: 3 spaces were used for indentation, but the rest of the document was indented using 4 spaces.
-        on line 316 of input.sass
+* {
+  box-sizing: border-box; }
 
-311:     letter-spacing: 1.2px;
-312:     margin-top: 0;
-313:     margin-bottom: 86px;
-314: }
-315: .boat-name {
-316:    margin-top: 182px;
-317:    margin-left: 27px;
-318:    width: 276px;  
-319: }
-320: 
-321: .btn-make {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  width: 2000px; }
 
-Backtrace:
-input.sass:316
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:494:in `block in tabulate'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:452:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:452:in `each_with_index'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:452:in `tabulate'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:417:in `_to_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Inconsistent indentation: 3 spaces were used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 316 of input.sass\A \A 311:     letter-spacing: 1.2px;\A 312:     margin-top: 0;\A 313:     margin-bottom: 86px;\A 314: }\A 315: .boat-name {\A 316:    margin-top: 182px;\A 317:    margin-left: 27px;\A 318:    width: 276px;  \A 319: }\A 320: \A 321: .btn-make {"; }
+.container {
+  width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0; }
+
+/* COLORS */
+/* HERO */
+.hero {
+  height: 850px;
+  background-image: url(img/hero-img.png);
+  text-transform: uppercase;
+  text-align: center;
+  color: #f9fafe; }
+
+.nav-container {
+  margin: 0 252px;
+  padding-top: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .nav-container li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 50px; }
+
+.active {
+  border: 1px solid #f9fafe;
+  padding: 15px 39px;
+  border-radius: 5px; }
+
+.hero-headline h2 {
+  font-size: 72px;
+  letter-spacing: 4.54px;
+  margin: 226px 0 29px; }
+.hero-headline p {
+  letter-spacing: 1.2px;
+  font-size: 30px;
+  margin-bottom: 90px;
+  font-family: "Open Sans";
+  font-weight: 400; }
+
+.search-bar {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.56px;
+  border-radius: 5px;
+  width: 769px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #717171; }
+
+.find {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  border-radius: 0 5px 5px 0; }
+  .find img {
+    margin-right: 11px; }
+
+.btn {
+  background-color: #e7434e;
+  color: #fff;
+  font-family: "Open Sans"; }
+
+.search p {
+  margin-left: 30px; }
+
+/* TABLE */
+.table {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+.numbers {
+  display: flex;
+  justify-content: space-around;
+  height: 140px;
+  margin-top: -70px;
+  margin-bottom: 110px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(52, 52, 52, 0.15);
+  font-family: "Open-sans"; }
+
+.line img {
+  width: 1px;
+  height: 80px;
+  background-color: #717171;
+  opacity: 0.3; }
+
+.box {
+  margin: auto; }
+  .box h5 {
+    color: #343434;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 17px; }
+  .box p {
+    color: #717171;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0; }
+
+/* DESTINATIONS */
+.upper-dest,
+.lower-dest {
+  display: flex;
+  justify-content: space-around; }
+
+.number-of-boats {
+  height: 42px;
+  width: 82px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 27px; }
+  .number-of-boats img {
+    margin-right: 12px; }
+
+.price-per-day {
+  height: 42px;
+  width: 105px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 27px;
+  padding: 0; }
+  .price-per-day p {
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    display: flex;
+    align-items: center; }
+
+.dest-name {
+  margin-left: 27px;
+  margin-top: 206px; }
+
+.destination-name1 {
+  width: 226px; }
+
+.destination-name2 {
+  width: 67px; }
+
+.destination-name3 {
+  width: 276px; }
+
+.destination-name4 {
+  width: 131px; }
+
+.destination-name5 {
+  width: 202px; }
+
+.destinations-headline h4,
+.featured-headline h4 {
+  color: #343434;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 30px; }
+
+.destinations-headline p,
+.featured-headline p {
+  color: #717171;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+  margin: 0; }
+
+.destination-photo {
+  width: 369px;
+  height: 360px;
+  background-repeat: no-repeat; }
+
+.figueira {
+  margin-top: 83px;
+  margin-bottom: 30px;
+  background-image: url(img/figueira.png);
+  background-repeat: no-repeat;
+  width: 772px;
+  height: 360px; }
+
+.ibiza {
+  margin-top: 83px;
+  margin-bottom: 30px;
+  background-image: url(img/ibiza.png); }
+
+.palma {
+  background-image: url(img/palma.png); }
+
+.portofino {
+  background-image: url(img/portofino.png); }
+
+.hercules {
+  background-image: url(img/hercules.png); }
+
+.btn-wide {
+  border-radius: 5px;
+  border: 1px solid rgba(38, 38, 38, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #343434;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.56px; }
+
+.btn-explore {
+  width: 310px;
+  height: 60px;
+  margin-top: 90px; }
+
+/*OWN BOAT */
+.have-your {
+  background-image: url(img/own-boat.png);
+  height: 600px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 101px;
+  color: #f9fafe; }
+
+.own-boat h2 {
+  font-size: 72px;
+  letter-spacing: 4.54px;
+  padding-top: 188px;
+  margin-top: 80px;
+  margin-bottom: 30px; }
+.own-boat p {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  margin-top: 0;
+  margin-bottom: 86px; }
+
+.boat-name {
+  margin-top: 182px;
+  margin-left: 27px;
+  width: 276px; }
+
+.btn-make {
+  background-color: #e7434e;
+  color: #fff;
+  width: 320px;
+  height: 60px; }
+
+/*FEATURED BOATS */
+.featured-boats {
+  text-align: center; }
+
+.boats1,
+.boats2 {
+  display: flex;
+  justify-content: space-around; }
+
+.boats1 {
+  margin-top: 93px;
+  margin-bottom: 30px; }
+
+.boats2 {
+  margin-bottom: 100px; }
+
+.yacht {
+  height: 340px;
+  width: 574px; }
+
+.delphia {
+  background-image: url(img/Delphia.png); }
+
+.sense {
+  background-image: url(img/sense.png); }
+
+.crusier5 {
+  background-image: url(img/Crusier51.png); }
+
+.crusier4 {
+  background-image: url(img/cruiser41s.png); }
+
+.btn-load {
+  margin-bottom: 87px;
+  width: 235px; }
+
+/* FOOTER */
+.footer {
+  background-color: #404040; }
+
+.container-footer {
+  height: 323px;
+  background-color: #404040;
+  display: flex;
+  justify-content: space-around; }
+
+.column1,
+.column2,
+.column3 h5,
+.column4 {
+  margin-top: 56px; }
+
+.column3 h5 {
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.56px;
+  text-align: left;
+  color: #f9fafe; }
+
+.email-bar {
+  width: 417px;
+  background-color: #fff;
+  height: 42px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Open Sans", sans-serif; }
+
+.email-bar > p {
+  color: #717171;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.28px;
+  margin-left: 20px; }
+
+.subscribe {
+  width: 147px;
+  height: 42px;
+  border-radius: 0 5px 5px 0;
+  background-color: #e7434e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #f9fafe; }
+
+.social-media ul {
+  width: 172px;
+  height: 44px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px;
+  align-items: center; }
+.social-media li {
+  height: 42px;
+  width: 42px;
+  background-color: #717171;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; }
+
+/*# sourceMappingURL=output.css.map */
