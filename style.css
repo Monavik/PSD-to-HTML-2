@@ -14,7 +14,7 @@ body {
 
 .hero {
     height: 850px;
-    background-image: url(hero-img.png);
+    background-image: url(img/hero-img.png);
     text-transform: uppercase;
     text-align: center;
 }
@@ -165,12 +165,14 @@ li {
     font-size: 16px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     border-radius: 5px;
     font-weight: 700;
     margin-top: 30px;
     margin-left: 27px;
-    padding: 0;
+}
+.quantity1 img {
+    margin-right: 12px;
 }
 .quantity2 {
     height: 42px;
@@ -180,12 +182,21 @@ li {
     align-items: center;
     justify-content: space-around;
     border-radius: 5px;
-    font-weight: 700;
     margin-top: 30px;
     margin-left: 27px;
     padding: 0;
 }
-.upper-dest {}
+.quantity2 p {
+    width: 84px;
+    height: 17px;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.32px;
+    display: flex;
+    align-items: center;
+}
 
 .quantity-name1 {
     width: 226px;
@@ -200,7 +211,7 @@ li {
     margin-top: 206px;
 }
 .quantity-name3 {
-    margin-top: 206px;
+    margin-top: 182px;
     margin-left: 27px;
     width: 276px;
 }
@@ -221,7 +232,7 @@ li {
 }
 
 .ibiza {
-    background-image: url(ibiza.png);
+    background-image: url(img/ibiza.png);
     background-repeat: no-repeat;
     margin-top: 83px;
     margin-bottom: 30px;
@@ -255,7 +266,7 @@ li {
 .figueira {
     margin-top: 83px;
     margin-bottom: 30px;
-    background-image: url(figueira.png);
+    background-image: url(img/figueira.png);
     background-repeat: no-repeat;
     width: 772px;
     height: 360px;
@@ -264,19 +275,19 @@ li {
 .palma {
     margin-top: 0;
     margin-bottom: 93px;
-    background-image: url(palma.png);
+    background-image: url(img/palma.png);
     background-repeat: no-repeat;
     width: 369px;
     height: 360px;
 }
 .portofino {
-    background-image: url(portofino.png);
+    background-image: url(img/portofino.png);
     background-repeat: no-repeat;
     width: 369px;
     height: 360px;
 }
 .hercules {
-    background-image: url(hercules.png);
+    background-image: url(img/hercules.png);
     background-repeat: no-repeat;
     width: 369px;
     height: 360px;
@@ -307,7 +318,7 @@ li {
 /*OWN BOAT*/
 
 .have-your {
-    background-image: url(own-boat.png);
+    background-image: url(img/own-boat.png);
     height: 600px;
     text-transform: uppercase;
     text-align: center;
@@ -362,22 +373,22 @@ li {
     margin-bottom: 100px;
 }
 .delphia {
-    background-image: url(Delphia.png);
+    background-image: url(img/Delphia.png);
     height: 340px;
     width: 574px;
 }
 .sense {
-    background-image: url(sense.png);
+    background-image: url(img/sense.png);
     height: 340px;
     width: 574px;
 }
 .crusier5 {
-    background-image: url(Crusier51.png);
+    background-image: url(img/Crusier51.png);
     height: 340px;
     width: 574px;
 }
 .crusier4 {
-    background-image: url(cruiser41s.png);
+    background-image: url(img/cruiser41s.png);
     height: 340px;
     width: 574px;
 }
@@ -422,6 +433,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "Open Sans", sans-serif;
 }
 .email-bar > p {
     color: #717171;
@@ -429,7 +441,7 @@ li {
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0.28px;
-    margin-left: 22px;
+    margin-left: 20px;
 }
 .subscribe {
     width: 147px;
@@ -443,11 +455,24 @@ li {
     font-weight: 400;
 }
 .social-media ul {
-    text-align: right;
-    margin: 0 
+    width: 172px;
+    height: 44px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    align-items: center;
 }
-.dupa {
-    height: 120px;
-    margin-left: 50px;
-    width: 150px;
+.social-media li {
+    height: 42px;
+    width: 42px;
+    background-color: #717171;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px #fff solid;
 }
+
+
