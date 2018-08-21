@@ -3,9 +3,10 @@ static
 
 ### Tools:
 * Avocode
+* Sass
 
 ### Languages:
-* Sass
+
 * HTML5
 * CSS3
 
